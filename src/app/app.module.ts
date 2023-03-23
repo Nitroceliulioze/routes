@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
-
-
 import { AppComponent } from './app.component';
-import { CharactersListComponent } from './components/characters-list/characters-list.component';
-import { MoviesListComponent } from './components/movies-list/movies-list.component';
-import { MovieComponent } from './components/movie/movie.component';
-import { CharacterComponent } from './components/character/character.component';
+import { PageNotFoundComponent } from './components/page-not-found.component';
+import { MoviesModule } from './modules/movies/movies.module';
+import { CharactersModule } from './modules/characters/characters.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CharactersListComponent,
-    MoviesListComponent,
-    MovieComponent,
-    CharacterComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    MoviesModule,
+    CharactersModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
