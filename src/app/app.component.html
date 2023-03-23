@@ -1,8 +1,13 @@
-<h1>
-  {{ title }}
-</h1>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    {{title}}
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+  <button mat-raised-button color="accent" routerLink="/movies">Movies</button>
+  <button mat-raised-button color="accent" routerLink="/characters">Characters</button>
+  <span></span>
+  </mat-toolbar-row>
+  </mat-toolbar>
 
-<a routerLink="/movies">Movies </a>
-<a routerLink="/characters">Characters</a>
 
 <router-outlet></router-outlet>

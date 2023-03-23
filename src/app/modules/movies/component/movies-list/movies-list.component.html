@@ -1,6 +1,16 @@
-<h2>Star Wars Movies</h2>
-<ul>
-    <li *ngFor="let movie of movies">
-        <app-movie [movie]="movie"></app-movie>
-    </li>
-</ul>
+<mat-toolbar color="secondary">
+  <h2>Star Wars Movies</h2>
+</mat-toolbar>
+
+<mat-list>
+  <mat-list-item *ngFor="let movie of movies">
+    <div>
+      <h3 matListItemTitle>
+        {{ movie.episode_id }} - {{ movie.title | uppercase }}
+      </h3>
+      <p matListItemLine class="wrap">
+        Movie description : {{ movie.description }}
+      </p>
+    </div>
+  </mat-list-item>
+</mat-list>

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components/page-not-found.component';
 import { MoviesModule } from './modules/movies/movies.module';
 import { CharactersModule } from './modules/characters/characters.module';
+import { MyMaterialModule } from './modules/my-material/my-material.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { CharactersModule } from './modules/characters/characters.module';
   ],
   imports: [
     BrowserModule,
+    MyMaterialModule,
     BrowserAnimationsModule,
     MoviesModule,
     CharactersModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
