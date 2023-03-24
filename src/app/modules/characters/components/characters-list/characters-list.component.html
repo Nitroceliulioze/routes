@@ -14,13 +14,16 @@
       <span *ngSwitchCase="'blue'" [style.color]="'blue'">{{
         character.eye_color
       }}</span>
-      <span *ngSwitchCase="'yellow'" [style.color]="'yellow'">{{
+      <span *ngSwitchCase="'yellow'" [style.color]="'yellow'" [style.background]="'black'">{{
         character.eye_color
-      }}</span>
+      }} </span>
       <span *ngSwitchCase="'red'" [style.color]="'red'">{{
         character.eye_color
       }}</span>
       <span *ngSwitchCase="'brown'" [style.color]="'brown'">{{
+        character.eye_color
+      }}</span>
+      <span *ngSwitchCase="'orange'" [style.color]="'orange'">{{
         character.eye_color
       }}</span>
       <span *ngSwitchDefault>unknown</span>

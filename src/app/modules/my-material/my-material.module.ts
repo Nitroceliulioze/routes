@@ -10,7 +10,13 @@ import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule],
+  imports: [MatButtonModule,
+    CommonModule,
+    MatListModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule],
   exports: [
     MatToolbarModule,
     CommonModule,
