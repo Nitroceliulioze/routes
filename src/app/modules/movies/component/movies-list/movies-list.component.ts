@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Movie } from 'src/app/modules/movies/interface/movie';
 import { MoviesService } from 'src/app/modules/movies/services/movies.service';
 
@@ -8,7 +8,7 @@ import { MoviesService } from 'src/app/modules/movies/services/movies.service';
   styleUrls: ['./movies-list.component.css'],
 
 })
-export class MoviesListComponent {
+export class MoviesListComponent implements OnInit {
   movies!: Movie[];
 
   constructor(private moviesService: MoviesService) {}

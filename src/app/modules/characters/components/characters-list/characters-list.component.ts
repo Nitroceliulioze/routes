@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Character } from 'src/app/modules/characters/interface/character';
 import { CharactersService } from 'src/app/modules/characters/services/characters.service';
+import { MyMaterialModule } from 'src/app/modules/my-material/my-material.module';
+
 
 @Component({
   selector: 'app-characters-list',
